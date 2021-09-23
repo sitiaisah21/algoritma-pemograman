@@ -1,0 +1,14 @@
+"""
+@materi : variabel dan pemograman dasar
+@judul : pratikum 2 materi
+@hari/tanggal : senin, 20210921
+@NIM :065002100026
+@author : siti aisah
+"""
+
+print("HITUNG LUAS RUANGAN")
+P = int(input("masukkan panjang ruangan : "))
+l = int(input("masukkan lebar ruangan : "))
+LUAS = (P*l)
+print("luas ruangan dengan panjang 10 dan lebar 5 adalah : ", LUAS, "meter")
+
