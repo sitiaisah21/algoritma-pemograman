@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+@materi : operasi aritmatika
+@judul : pratikum modul 2
+@hari/tanggal : senin, 20210927
+@nim : 065002100026
+@author: siti aisah
+"""
+
+a= float(input("masukkan nilai a= "))
+b= float(input("masukkan nilai b= "))
+print("jumlah a ditambah b adalah = ", float(a+b))
+print("selisih antara a dikurang b adalah = ", float(a-b))
+print("hasil perkalian a dikali b adalah = ", float(a*b))
+print("hasil pembagian a dibagi b adalah = ", float(a/b))
+print("sisa pembagian a dibagi b adalah = ", float(a%b))
+print("hasil pangkat a dipangkatkan b adalah = ", float(a**b))
+import math
+print("hasil dari log a = ", math.log10(a))
