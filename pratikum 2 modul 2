@@ -1,0 +1,26 @@
+"""
+@materi: operasi aritmetika
+@judul: pratikum 2
+@hari,tanggal: senin,27 september 2021
+@nama : siti aisah
+@nim : 065002100026
+"""
+
+import math
+
+GL1= float(input("masukkan lattitude 1: "))
+GL2= float(input("masukkan lattitude 2: "))
+GB1= float(input("masukkan longitude 1: "))
+GB2= float(input("masukkan longitude 2:  "))
+
+latt =  GL1 - GB2
+long = GB1 - GL2
+
+a = math.sin(latt/2)**2 + math.cos(GL1)* math.cos(GL2) + math.sin(long/2)**2
+c = 2 * math.atan(math.sqrt(a))
+
+radius= 6371
+
+d = radius * c
+
+print("jarak antara dua titik adalah",d,"kilometer")
