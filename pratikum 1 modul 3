@@ -1,0 +1,26 @@
+"""
+@materi: struktur kendali
+@judul: pratikum modul 3
+@hari,tanggal: senin, 04-10-2021
+@nama : siti aisah
+@nim : 065002100026
+"""
+print("mengetahui jenis dari suatu segitiga dengan berdasarkan panjang sisi yang diberikan")
+
+a = float(input("masukkan sisi A: "))
+b = float(input("masukkan sisi B: "))
+c = float(input("masukkan sisi c: "))
+
+if(a ==b == c):
+    print("ini merupakkan segitiga sama sisi")
+    
+elif((a + b) <= c or (a + c <= b) or (b + c <= a)) :
+    print("ini bukan merupakkan segitiga")
+    
+elif(a==b) or b == c or c==a :
+    print("ini merupakkan segitiga sama kaki")
+    
+    
+else :
+    print("ini merupakkan segitiga sembarang")
+    
