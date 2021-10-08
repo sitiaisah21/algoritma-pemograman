@@ -1,0 +1,45 @@
+"""
+@materi: struktur kendali
+@judul: pratikum modul 3
+@hari,tanggal: senin, 04-10-2021
+@nama : siti aisah
+@nim : 065002100026
+"""
+
+
+
+a= float(input("masukkan nilai a : ")) 
+b= float(input("masukkan nilai b : ")) 
+c= float(input("masukkan nilai c : "))
+
+
+import math as cm  
+print("bentuk persamaan kuadrat : a*x^2 + b*x + c = 0")
+D = b**2 -4 *a*c
+
+if a == 0 :
+    print("bukan merupakkan persamaan kuadrat")
+ 
+    
+    
+if D > 0 :
+    X1 = (-b+cm.sqrt(D))/(2*a)
+    X2 = (-b-cm.sqrt(D))/(2*a)
+    print("memiliki akar bebeda")
+    print("akar dari persamaan kuadrat adalah "+str(X1)+" dan "+str(X2))
+    print("dengan diskriminan:" , D ) 
+    print("akar X1=", X1)
+
+elif D < 0 :
+    print("merupakkan akar imaginer ")
+    print("X1= -", b, "+ akar",D,"/2*",a)
+    print("X2= -", b, "- akar",D,"/2*",a)
+    print("dengan diskriminan:" , D ) 
+    
+elif D == 0 :
+     X1 = (-b +cm.sqrt(D))/ (2*a) 
+     X2 = (-b-cm.sqrt(D))/(2*a)
+     print("merupakkan akar kembar")
+     print("akar dari persamaan kuadrat adalah "+str(X1)+" dan "+str(X2))
+     print("dengan diskriminan:" , D ) 
+     print("akar X1=", X1
