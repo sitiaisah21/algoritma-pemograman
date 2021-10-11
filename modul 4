@@ -1,0 +1,16 @@
+'''
+@materi : struktur kendali 2
+@judul: pratikum 4 materi
+@hari/tanggal: senin, 11 oktober 2021
+@nama : siti aisah
+@nim : 065002100026
+
+'''
+n = int(input('masukkan angka maksimal: '))
+
+for i in range(n):
+  for j in range(1, n+1):
+    print(n, end='')
+
+  print()
+  n-=1
