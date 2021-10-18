@@ -1,0 +1,55 @@
+"""
+@materi : control structure 2
+@judul : pratikum 4 materi
+@hari/tanggal : senin, 20211011
+@nim : 065002100026
+@author: siti aisah
+""" 
+
+a = "0"
+m = 0
+b = 0
+
+while (a != "") :
+    a = str(input("masukkan nilai :"))
+    b = b + 1
+    if (a == ''):
+        break ;
+    elif (a== 'A'):
+        print ("nilai = 4.00")
+        m += 4
+    elif (a == 'A-'):
+        print ("nilai = 3.75")
+        m += 3.75
+    elif (a== 'B+'):
+        print ("nilai = 3.50")
+        m += 3.50
+    elif (a == 'B'):
+        print ("nilai = 3.00")
+        m += 3.00
+    elif (a== 'B-'):
+        print ("nilai = 2.75")
+        m += 2.75
+    elif (a == "c+"):
+        print ("nilai = 2.50")
+        m += 2.50
+    elif (a == "c"):
+        print ("nilai = 2.00")
+        m += 2.00
+    elif (a == "c-"):
+        print ("nilai = 1.75")
+        m += 1.75
+    elif (a == "D"):
+        print ("nilai = 1.50")
+        m += 1.50
+    elif (a == "E"):
+        print ("nilai = 1.25")
+        m += 1.25
+    else :
+        b=b-1
+        print ("masukkan nilai yang benar :")
+if (b ==1):
+        print ("rata ratanya adalah 0")
+else :
+        ratarata  = m/(b-1)
+        print ("rata ratanya adalah :", ratarata)
