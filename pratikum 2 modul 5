@@ -1,0 +1,46 @@
+"""
+@materi : control structure 2
+@judul : pratikum 5 materi
+@hari/tanggal : senin, 20211018
+@nim : 065002100026
+@author: siti aisah
+"""
+
+print("menghitung Tiket Masuk Kebun Binatang Berdasarkan Umur beserta Pembayarannya")
+a = "0"
+m = 0
+b = 0
+
+while (a != "") :
+    a = int(input('masukkan umur :'))
+    b+=1
+    
+    if a == int("0"):
+        break 
+        
+    elif (a <= 2):
+        m += 0
+        print ("gratis")
+        print("running total:", m)
+    
+    elif (a >= 3 and a <= 12):
+        m += 14.00
+        print ("running total:",m)
+        print("Harga $ 14.00")
+        
+    elif (a >= 65):
+        m += 18.00
+        print ("running total:",m)
+        print("Harga $ 18.00")
+         
+    else :
+        m += 23.00
+        print("running total", m)
+        print("Harga $ 23.00")
+        
+
+uang=int(input("masukkan uang:"))
+print("kembalian anda: ",uang-m)
+while(uang <= m):
+    print("maaf uang anda tidak cukup: $")
+print("terimakasih sudah membeli tiket, have fun")
