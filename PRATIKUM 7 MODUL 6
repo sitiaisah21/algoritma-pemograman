@@ -1,0 +1,45 @@
+"""
+@materi : fungsi
+@judul : pratikum 7 materi
+@hari/tanggal : senin, 20211101
+@nim : 065002100026
+@author: siti aisah
+""" 
+
+def kategori(a="0",total=0,b=0 ):
+    while (a != "") :
+        a = str(input("masukkan nilai :"))
+        b = b + 1
+        if (a == ''):
+            return total/(b -1)
+        elif (a == 'A'):
+            print ("nilai = 4.00")
+            total += 4.00
+        elif (a == 'A-'):
+            print ("nilai = 3.75")
+            total += 3.75
+        elif (a == 'B+'):
+            print ("nilai = 3.50")
+            total += 3.50
+        elif (a == 'B'):
+            print ("nilai = 3.00")
+            total += 3.00
+        elif (a == 'B-'):
+            print ("nilai = 2.75")
+        elif (a == "C+"):
+            print ("nilai = 2.50")
+            total += 2.50
+        elif (a == "C"):
+            print ("nilai = 2.00")
+            total += 2.00
+        elif (a == "C-"):
+            print ("nilai = 1.75")
+            total += 2.75
+        elif (a == "D"):
+            print('nilai=1.5')
+            total += 1.75
+        else :
+            print ("silahkan masukan nilai valid ya")
+            
+rata_rata = kategori ()
+print("rata-ratanya adalah",rata_rata)
