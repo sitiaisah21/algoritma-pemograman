@@ -1,0 +1,34 @@
+"""
+materi : fungsi
+@judul : pratikum 7 modul 
+@hari/tanggal : senin, 202111
+@nim : 065002100026
+@author: siti aisah
+"""
+
+
+print("menghitung jumlah hari dalam satu bulan")
+def bulan(b=0):
+    a=True
+    while(a==True):
+        Bulan= int(input("Masukkan Bulan (1-12): "))
+        Tahun = int(input("Masukkan Tahun: "))
+        
+        if(Bulan == -1):
+            a=False
+            print("terimakasih sudah menggunakan program saya, sampai jumpa lagi")
+        elif(Bulan == 1 or Bulan == 3 or Bulan == 5 or Bulan == 7 or Bulan == 8 or Bulan == 10 or Bulan == 12):
+            print("Jumlah hari pada bulan", Bulan , "ditahun", Tahun, "adalah 31 hari")
+        elif(Bulan >= 13 or Bulan == 0 or Bulan <= -2):
+            print("tidak terdapat di kalender masehi")
+        elif(Bulan==2):
+            if (Bulan == 2 and Tahun % 4==0):
+                print("jumlah hari pada bulan", Bulan , "ditahun", Tahun, "adalah 29 hari")
+            else:
+                print("jumlah hari pada bulan", Bulan , "ditahun", Tahun, "adalah 28 hari")
+
+    else:
+        print("jumlah hari pada bulan", Bulan , "ditahun", Tahun, "adalah 30 hari")
+
+hari=bulan()
+
