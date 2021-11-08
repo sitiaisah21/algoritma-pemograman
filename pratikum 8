@@ -1,0 +1,27 @@
+"""
+@materi : fungsi 2
+@judul : pratikum 8 materi
+@hari/tanggal : senin, 20211108
+@nim : 065002100026
+@author: siti aisah
+"""
+print('program ini menentukkan bilangan prima dan bukan bilangan prima')
+def bilangan_prima(angka):
+    if angka > 1:
+        prima(angka)
+    else:
+        print(angka,"adalah bilangan prima")
+def prima(angka):
+    for i in range(2,angka):
+             if (angka % i) == 0:
+                 print(angka,"bukan bilangan prima")
+                 print("karena", i,"dikalikan",angka//i,"hasilnya adalah",angka)
+                 break
+    else:
+        print(angka,"adalah bilangan prima")
+X = 1
+while X == 1 :
+    angka = int(input('masukan bilangan = '))
+    bilangan_prima(angka)
+
+print('terimakasih sudah menggunakkan program saya')
