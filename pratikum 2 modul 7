@@ -1,0 +1,44 @@
+"""
+@materi : fungsi
+@judul : pratikum 7 materi
+@hari/tanggal : senin, 20211101
+@nim : 065002100026
+@author: siti aisah
+"""
+print('selamat datang di program saya')
+print('membuat tugas tentang menghitung ordinal number')
+S=False
+angka = ''
+
+def agka_pertama(angka):
+    if angka in [11,12,13]:
+        print(angka, 'th')
+    elif angka % 10 == 1:
+        print(angka, 'st')
+    else:
+        kedua(angka)
+        
+def kedua(angka):
+    if angka == 2 or angka % 10 == 2:
+        print(angka, 'nd')
+    else:
+        ketiga(angka)
+        
+def ketiga(angka):
+    if angka == 3 or angka % 10 == 3:
+        print(angka, 'rd')
+    else:
+        lainnya(angka)
+        
+def lainnya(angka):
+    print(angka, 'th')
+    
+while (not S):
+    print('ketik 0 untuk menghentikkan program')
+    angka = int(input('Masukkan angka: '))
+    if (angka == 0):
+        S = True
+        print (angka, 'th')
+        print('Terima Kasih telah menggunakan program ini, sampai jumpa lagi ^-^')
+    else:
+        agka_pertama(angka)
