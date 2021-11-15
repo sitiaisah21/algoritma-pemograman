@@ -1,0 +1,28 @@
+"""
+@materi : fungsi rekursif
+@judul : pratikum 8 materi
+@hari/tanggal : senin, 20211115
+@nim : 065002100026
+@author: siti aisah
+"""
+@materi : Fungsi Rekursif
+@judul : pratikum 9 
+@hari/tanggal : senin, 20211115
+@nim : 065002100026
+@author: siti aisah
+"""
+print("program ini menentukkan penjumlahan menggunakan Fungsi Rekursif")
+def penjumlahan(angka=0,jml=0,n=1):
+    if(jml<=0):
+        return 0
+    else:
+        angka=int(input("masukkan bilangan ke-:"+str(n)+":"))
+        if(jml==1):
+            return angka
+        else:
+            n+=1
+            return angka+penjumlahan(angka,jml-1, n)
+        
+jumlah=int(input("masukkan jumlah:"))
+nilai= penjumlahan(jml=jumlah)
+print("hasil dari penjumlahan adalah :"+str(nilai))
