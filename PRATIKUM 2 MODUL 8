@@ -1,0 +1,42 @@
+"""
+@materi : Fungsi Rekursif 
+@judul : pratikum modul 8
+@hari/tanggal : senin, 20212111
+@nim : 065002100026
+@author: siti aisah
+"""
+def start(x=0,y=0):
+    print("program ini menentukkan bilangan perepangkatan")
+    x=int(input("masukan angka:"))
+    y=int(input('masukan pangkat:'))
+    hasil = pangkat(bilangan = x,ganda = y)
+    print("hasil dari ",x,"pangkat",y,"adalah :",hasil)
+    stop()
+
+def stop():
+    a=input("apakah anda ingin melakukan progam ini lagi?(ya/tidak)")
+    if a == "ya":
+        start()
+    elif a == "tidak":
+        print("terimkasih sudah menggunakkkan program ini, sampai ketemu lagi")
+    else :
+        print("data yang anda masukan salah")
+        stop()
+        
+def pangkat(bilangan,ganda ) :
+    if bilangan == 1:
+        return 1 
+    elif bilangan == 0:
+        return 0
+    else :
+        if ganda == 1:
+            return bilangan 
+        elif ganda == 0:
+            return 1
+        elif ganda > 1 :
+            return bilangan * pangkat(bilangan,ganda-1)
+        elif ganda < 0 :
+            return 1/bilangan * pangkat(bilangan,ganda-1)
+        else :
+            print("data invalid")
+start()
