@@ -1,0 +1,32 @@
+"""
+@materi : File Handling
+@judul : pratikum modul 9
+@hari/tanggal : jum'at,26-11-2021
+@nim : 065002100026
+@author: siti aisah
+"""
+print ("Selamat datang di Program Biodata file handling")
+# Ambil input dari user
+nama= input("Nama: ")
+umur= input("Umur: ")
+alamat= input("Alamat: ")
+email= input("Email: ")
+dosen= input("Dosen wali: ")
+# format teks
+teks = "Nama: {}\nUmur: {}\nAlamat: {}\nEmail:{}\nDosen wali:{}".format(nama, umur, alamat,email,dosen)
+print("")
+# buka file untuk ditulis
+def write():
+    file_bio = open("biodata.txt", "w")
+    file_bio.write(teks)
+    file_bio.close()
+# buka file untuk dibaca
+def read():
+    file=open("biodata.txt", "r")
+    teks=file.read()
+    print(teks)
+    file.close()
+
+write()
+read()
+print("terimakasih sudah menggunakkan program saya")
