@@ -1,0 +1,67 @@
+"""
+@materi : File Handling
+@judul : pratikum modul 9
+@hari/tanggal : jum'at,26-11-2021
+@nim : 065002100026
+@author: siti aisah
+"""
+def Menulis(data):
+    file = open(namafile+".txt", "w")
+    file.write(data)
+    file.close()
+
+def Membaca():
+    file = open(namafile+".txt", "r")
+    text = file.read()
+    print(text)
+    file.close()
+
+def Read(data):
+    file = open(namafile+".txt", "a")
+    file.write(data)
+    file.close()
+
+
+salah=False
+while (not salah) :
+    try:
+        print("====PROGRAM FILE HANDLING====")
+        print("1. Membuat dan Menulis File")
+        print("2. Membaca File")
+        print("3. Menambahkan Text Pada File")
+        print("4. Keluar dari Program")
+        print("")
+        pilih=int(input("Masukan Pilihan Berupa Angka (1/2/3/4): "))
+        if pilih==4 :
+            salah=True
+            print("Terimakasih Sudah Meggunakan Program Saya")
+        elif pilih==1:
+            namafile=input("Masukan Nama File: ")
+            nama=input("Masukan Namamu: ")
+            nim=int(input("Masukan NIM kamu: "))
+            tahun=int(input("Masukan Tahun Angkatanmu: "))
+            data="Nama: {}\nNIM: {}\nAngkatan: {}".format(nama,nim,tahun)
+            Menulis(data)
+            print("\n\nFile Berhasil dibuat\n\n")
+        elif pilih==2:
+            namafile=input("Masukan Nama File: ")
+            print("")
+            print("")
+            Membaca()
+            print("")
+            print("")
+        elif pilih==3:
+            namafile=input("Masukan Nama File: ")
+            Nama=input("Masukan Nama Temanmu: ")
+            Favorit=input("Favorit warna temanmu: ")
+            Makan=input("Makanan favorit temanmu:")
+            data="\nNama: {}\nFavorit:{}\nMakan:{}".format(Nama,Favorit,Makan)
+            print("")
+            Read(data)
+            print("\n\nFile Berhasil ditambahkan\n\n")
+        else :
+            print("\nDATA EROR!!\nMohon diulangi lagi ya, SEMANGAT:)!!!\n")
+    except ValueError:
+        print("Masukkan data kembali")
+    except FileNotFoundError:
+        print("Masukkan data anda kembali, File tersebut tidak ditemukan!\n")
