@@ -1,0 +1,34 @@
+"""
+@materi : Search, List & Sorting
+@judul : pratikum modul 10
+@hari/tanggal : senin,29-11-2021
+@nim : 065002100026
+@author: siti aisah
+"""
+print("program ini menjalankan binary search")
+def binarySearch(arr, l, r, x): 
+	while l <= r: 
+		mid = (r+l)//2;
+		if arr[mid] == x: 
+			return mid
+		elif arr[mid] < x: 
+			l = mid + 1
+		else: 
+			r = mid - 1
+	return -1
+def bubble_Sort(data):
+    a = len(data)
+    for i in range(a):
+        for j in range(0, a-i-1):
+            if v[j] > v[j+1]:
+                v[j], v[j+1]= v[j+1], v[j]
+v = [89,99,9,19,999,29,79,49,39,1]
+x = int(input('Masukkan angka yang dicari: '))
+bubble_Sort(v)
+angka = int(binarySearch(v, 0, len(v)-1, x))
+print('Urutannya: ', v)
+if angka != -1:
+    print('Element ditemukan pada posisi ', (angka)+1)
+else:
+    print('Element tidak ditemukan pada list')
+print("terimakasih sudah menggunakkan program saya")
