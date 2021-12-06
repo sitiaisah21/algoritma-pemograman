@@ -1,0 +1,25 @@
+"""
+@materi : Object Oriented Programming pada Python
+@judul : pratikum 12
+@hari/tanggal : senin,06-12-2021
+@nim : 065002100026
+@author: siti aisah
+"""
+class biodata():
+    def __init__(self,nama,nim,tahunangkatan):        
+        print ("Silakan masukkan biodata anda")
+    def input(self):
+        self.nama = input("Nama: ")
+        self.nim = input("NIM:  ")
+        self.tahunangkatan = input("Tahun angkatan:")
+         
+class mahasiswa(biodata):
+    def cetak(self):
+        print( "Nama:  ",self.nama)
+        print ("NIM:    ",self.nim)
+        print ("Tanggal Lahir:  ",self.tahunangkatan)
+        
+ 
+dataMhs = mahasiswa("nama","nim","tahunangkatan")
+dataMhs.input()
+dataMhs.cetak()
