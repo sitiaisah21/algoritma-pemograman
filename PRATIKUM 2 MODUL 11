@@ -1,0 +1,57 @@
+"""
+@materi : Object Oriented Programming pada Python
+@judul : pratikum 12
+@hari/tanggal : senin,06-12-2021
+@nim : 065002100026
+@author: siti aisah
+"""
+class OOP:
+    def __init__(self, nama, nilai):
+        self.nama = nama
+        self.nilai = nilai
+    def hasil(self):
+        print('Nama: ', self.nama, '\nNilai: ', str(self.nilai))
+
+y = True 
+while (y):
+    try:
+        print("==========PROGRAM OOP==========")
+        print("1. Mendeklarasikan Objek")
+        print("2. Menampilkan Objek")        
+        print("3. Merubah Nilai Objek")
+        print("4. Menghapus Objek")
+        print("5. Keluar Dari Program")
+        print("")
+        angka = int(input("Masukkan pilihan (1/2/3/4/5): "))
+        if angka == 1:
+            nama = input("Masukkan namamu: ")
+            nilai = input("Masukkan nilaimu: ")
+            copy = OOP(nama,nilai)
+            print("\n\nData berhasil dibuat\n\n")
+        elif angka == 2:
+            copy = OOP(nama,nilai)
+            copy.hasil()
+            print('\n')
+        elif angka == 3:
+            mengubah = input('Apa yang akan diubah(nama/nilai): ')
+            if mengubah == 'nama' :
+                nama = input('Masukkan nama: ')
+                print('Data Nama telah Diubah\n')
+            elif mengubah == 'nilai' :
+                nilai = input('Masukkan nilai: ')
+                print('Data Nilai telah Diubah\n')
+            else:
+                print('Kurang tepat!')
+        elif angka == 4:
+            print('Data Berhasil Dihapus')
+            nama = 'none'
+            nilai = 'none'
+        elif angka == 5:
+            y = False 
+            print("Terima kasih telah menggunakkan program saya")
+        else:
+            print ("Anda salah memasukkan pilihan")
+            print("")
+
+    except ValueError:
+        print("Masukkan kembali")
